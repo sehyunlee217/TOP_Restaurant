@@ -4,7 +4,8 @@
   "description": "Restaurant page created using JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,12 @@
   },
   "homepage": "https://github.com/sehyunlee217/TOP_Restaurant#readme",
   "devDependencies": {
+    "css-loader": "^6.7.4",
+    "html-webpack-plugin": "^5.5.1",
+    "img-loader": "^4.0.0",
+    "style-loader": "^3.3.3",
     "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   }
 }
