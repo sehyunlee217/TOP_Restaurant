@@ -19,7 +19,9 @@
   "homepage": "https://github.com/sehyunlee217/TOP_Restaurant#readme",
   "devDependencies": {
     "css-loader": "^6.7.4",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.1",
+    "image-webpack-loader": "^8.1.0",
     "img-loader": "^4.0.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.83.1",

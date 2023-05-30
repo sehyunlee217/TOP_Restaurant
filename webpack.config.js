@@ -25,6 +25,13 @@ module.exports = {
                     "style-loader",
                     "css-loader"
                 ]
+            },
+            {
+                test: /\.png$/,
+                loader: "file-loader",
+                options: {
+                    name: "[name].[ext]"
+                }
             }
         ]
     },
