@@ -131,6 +131,7 @@ body {
   color: #222; 
 
   margin: 0;
+  background-image: url("../images/jam_background.jpg");
 }
 
 
@@ -428,13 +429,33 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 1em;
+  gap: 1em; 
 }
 
 #header{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgb(141, 37, 37);
+}
+
+
+#header>img{
+  width: 5em;
+  height: auto;
+  margin: 0.5em;
+  margin-left: 2em;
+}
+
+#header>.btns{
+  display: flex;
+  gap: 3em;
+  margin: 1em;
+}
+
+button{
+  color: white;
 }
 
 #content{
@@ -446,8 +467,8 @@ body{
 .container{
   justify-items: start;
   row-gap: 1em;
-  border: 2px solid blue;
-  padding: 1em;
+  padding: 2em;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .title{
@@ -471,5 +492,5 @@ body{
   text-align: center;
 }
 
-#footer{
-}
+/* #footer{
+} */

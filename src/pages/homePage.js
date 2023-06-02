@@ -1,6 +1,8 @@
 function generateHomepage() {
     console.log("homepage");
 
+    document.body.classList.add("background");
+
     const contentLoc = document.getElementById("content");
 
     // Info Section ---------------------------
