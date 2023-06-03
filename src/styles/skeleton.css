@@ -438,6 +438,7 @@ body{
   align-items: center;
   justify-content: space-between;
   background-color: rgb(141, 37, 37);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
@@ -456,6 +457,8 @@ body{
 
 button{
   color: white;
+  height: 100%;
+  margin: 0
 }
 
 #content{
@@ -469,6 +472,7 @@ button{
   row-gap: 1em;
   padding: 2em;
   background-color: rgba(128, 128, 128, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .title{
