@@ -9,11 +9,16 @@ import generateMenupage from "./pages/menuPage";
 // Home page will be the default page generated
 
 function createNavbtn(item, textContent, insertLoc) {
-    // variable to store which nav button user clicked
-    let navSelect;
-
     item.textContent = textContent;
+    // when button is clicked, 
     item.addEventListener("click", () => {
+        // clear page 
+        const contentLoc = document.getElementById("content");
+        contentLoc.replaceChildren();
+        // remove background image
+        document.body.style.backgroundImage = "";
+
+        // load new page on click
         if (item.textContent == "Home") {
             generateHomepage();
         }
@@ -33,25 +38,33 @@ import logo from "./images/jam_logo.png";
 function generateNavbar() {
     const headerLoc = document.getElementById("header");
 
-    // logo for restaurant
+    // load logo for restaurant
     const headerImg = document.createElement("img");
     headerImg.src = logo;
     headerLoc.appendChild(headerImg);
 
+    // Create buttons to direct to each page
     const buttonLoc = document.createElement("div");
     buttonLoc.classList.add("btns");
     headerLoc.appendChild(buttonLoc);
 
-    // navigation bar buttons to display different pages
+    // ---- navigation bar buttons to display different pages ----
+
+    // direct to home page
     const homePage = document.createElement("button");
     createNavbtn(homePage, "Home", buttonLoc);
 
+    // direct to menu page
     const menuPage = document.createElement("button");
     createNavbtn(menuPage, "Menu", buttonLoc);
 
+    // direct to contacts page
     const contactPage = document.createElement("button");
     createNavbtn(contactPage, "Contact", buttonLoc);
+    generateHomepage();
 }
+
+// ---- Main Functionality ------
 
 generateNavbar();
 
